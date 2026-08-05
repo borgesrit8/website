@@ -8,7 +8,7 @@ export default function Events() {
     <div className="pt-32 pb-24 px-6">
       <div className="max-w-5xl mx-auto">
         <Reveal className="text-center mb-20">
-          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">Percurso</p>
+          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">Path</p>
           <h1 className="font-display text-4xl md:text-5xl text-cream">Events</h1>
         </Reveal>
 
