@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f10;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (max-width: 768px), (hover: none) {
+  body {
+    cursor: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f10;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3a40;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f3a6b6;
+}
+
+::selection {
+  background: #f3a6b6;
+  color: #0f0f10;
+}
+
+:focus-visible {
+  outline: 2px solid #d8b46a;
+  outline-offset: 3px;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(120deg, #d8b46a, #ffd6e0 60%, #d8b46a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(24, 24, 27, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Signature speed-streak motif — thin motion lines evoking a rally car passing */
+.speed-streaks {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.speed-streaks span {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d8b46a, transparent);
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
