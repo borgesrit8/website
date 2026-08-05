@@ -31,7 +31,7 @@ export default function Footer() {
       </div>
 
       <p className="text-center text-[11px] text-cream/30 mt-10">
-        © {new Date().getFullYear()} Rita Borges Photography. Todos os direitos reservados.
+        © {new Date().getFullYear()} Rita Borges Photography. All rights reserved.
       </p>
     </footer>
   )
