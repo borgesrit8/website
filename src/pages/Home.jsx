@@ -5,7 +5,7 @@ import { FiCamera, FiHeart, FiWind, FiFlag, FiChevronDown } from 'react-icons/fi
 import Reveal from '../components/Reveal'
 import FeaturedCarousel from '../components/FeaturedCarousel'
 import { fadeUp, viewportOnce } from '../hooks/useScrollReveal'
-import heroImg from '../assets/hero/hero-rally.jpg'
+import heroImg from '../assets/hero/hero-rally2.jpg'
 
 const cards = [
   { icon: FiCamera, title: 'Photography', text: 'Every frame composed with intention, not just captured.' },
