@@ -26,7 +26,7 @@ export default function Footer() {
           aria-label="Voltar ao topo"
           className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs text-cream/70 hover:border-gold hover:text-gold transition-colors"
         >
-          <FiArrowUp /> Topo
+          <FiArrowUp /> Top
         </button>
       </div>
 
