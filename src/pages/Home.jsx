@@ -5,7 +5,7 @@ import { FiCamera, FiHeart, FiWind, FiFlag, FiChevronDown } from 'react-icons/fi
 import Reveal from '../components/Reveal'
 import FeaturedCarousel from '../components/FeaturedCarousel'
 import { fadeUp, viewportOnce } from '../hooks/useScrollReveal'
-import heroImg from '../assets/hero/hero-rally2local.jpg'
+
 
 const cards = [
   { icon: FiCamera, title: 'Photography', text: 'Every frame composed with intention, not just captured.' },
@@ -25,11 +25,6 @@ export default function Home() {
       {/* HERO */}
       <section ref={heroRef} className="relative h-screen w-full overflow-hidden">
         <motion.div style={{ y }} className="absolute inset-0">
-          <img 
-            src={heroImg}
-            alt="Citroën C3 de ralis em curva de terra, a levantar uma grande nuvem de poeira"
-            className="h-full w-full object-cover object-[center_75%]"
-          />
           <div className="absolute inset-0 bg-gradient-to-b from-bg-primary/70 via-bg-primary/40 to-bg-primary" />
           <div className="absolute inset-0 bg-bg-primary/20" />
         </motion.div>
