@@ -3,6 +3,7 @@ import rqfCover from '../assets/hero/erqf.jpg'
 import wrcCover from '../assets/hero/ewrc.jpg'
 
 export const events = [
+
   {
     id: 1,
     name: 'Rali Espumante do Dão',
