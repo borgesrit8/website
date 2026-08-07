@@ -19,7 +19,7 @@ import wrc15 from '../assets/hero/wrc15.jpeg'
 import wrc16 from '../assets/hero/wrc16.jpeg'
 import wrc17 from '../assets/hero/wrc17.jpg'
 import wrc18 from '../assets/hero/wrc18.jpg'
-import wrc19 from '../assets/hero/wrc19.jpg'
+import wrc19 from '../assets/hero/wrc19.JPG'
 import wrc20 from '../assets/hero/wrc20.jpg'
 
 
