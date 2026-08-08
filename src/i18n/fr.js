@@ -66,6 +66,7 @@ const fr = {
     title: 'Galerie',
     all: 'Tous',
     nationalRally: 'Rallyes Nationaux',
+    chooseRally: 'Choisis un rallye pour voir les photos.',
 
     events: {
       rallyPortugal2026: 'Rallye du Portugal 2026',

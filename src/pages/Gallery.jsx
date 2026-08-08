@@ -201,7 +201,7 @@ const hasGroups = availableGroups.length > 0
   <MasonryGrid images={visibleImages} columnCount={columnCount} onOpen={openAt}  t={t}/>
 ) : (
   <p className="text-center text-cream/40 text-sm">
-    Choose a rally to view the photos.
+     {t.gallery.chooseRally}
   </p>
 )}
 
