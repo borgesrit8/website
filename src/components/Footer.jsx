@@ -1,6 +1,15 @@
 import { FiInstagram, FiLinkedin, FiMail, FiArrowUp } from 'react-icons/fi'
+import { useLanguage } from '../hooks/LanguageContext'
+import pt from '../i18n/pt'
+import en from '../i18n/en'
+import fr from '../i18n/fr'
+import de from '../i18n/de'
 
 export default function Footer() {
+  const { language } = useLanguage()
+  const translations = { pt, en, fr, de }
+  const t = translations[language]
+
   const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
 
   return (
@@ -8,7 +17,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <p className="font-display text-2xl text-cream">Rita Borges</p>
-          <p className="text-[10px] tracking-widest2 uppercase text-gold">Photography</p>
+          <p className="text-[10px] tracking-widest2 uppercase text-gold">{t.footer.tagline}</p>
         </div>
 
         <div className="flex items-center gap-5 text-cream/70">
@@ -23,15 +32,15 @@ export default function Footer() {
         <button
           onClick={scrollTop}
           data-cursor-hover
-          aria-label="Voltar ao topo"
+          aria-label={t.footer.backToTop}
           className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs text-cream/70 hover:border-gold hover:text-gold transition-colors"
         >
-          <FiArrowUp /> Top
+          <FiArrowUp /> {t.footer.top}
         </button>
       </div>
 
       <p className="text-center text-[11px] text-cream/30 mt-10">
-        © {new Date().getFullYear()} Rita Borges Photography. All rights reserved.
+        © {new Date().getFullYear()} Rita Borges Photography. {t.footer.rights}
       </p>
     </footer>
   )

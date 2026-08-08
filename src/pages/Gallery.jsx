@@ -4,19 +4,30 @@ import Reveal from '../components/Reveal'
 import Lightbox from '../components/Lightbox'
 import { categories, galleryImages } from '../data/gallery'
 
+import { useLanguage } from '../hooks/LanguageContext'
+import pt from '../i18n/pt'
+import en from '../i18n/en'
+import fr from '../i18n/fr'
+import de from '../i18n/de'
+
 function useColumnCount() {
   const [cols, setCols] = useState(3)
+
   useEffect(() => {
     const calc = () => {
       const w = window.innerWidth
+
       if (w < 640) setCols(1)
       else if (w < 1024) setCols(2)
       else setCols(3)
     }
+
     calc()
     window.addEventListener('resize', calc)
+
     return () => window.removeEventListener('resize', calc)
   }, [])
+
   return cols
 }
 
@@ -32,7 +43,24 @@ function useMasonryColumns(images, columnCount) {
   }, [images, columnCount])
 }
 
-function MasonryGrid({ images, columnCount, onOpen }) {
+function translateEvent(group, t) {
+  if (group === 'Rally de Portugal 2026') {
+    return t.gallery.events.rallyPortugal2026
+  }
+
+  if (group === 'Rali Queima das Fitas 2026') {
+    return t.gallery.events.raliQueimaFitas2026
+  }
+
+  if (group === 'Rally Legends Luso-Bussaco 2025') {
+    return t.gallery.events.rallyLegends2025
+  }
+
+  return group
+}
+
+
+function MasonryGrid({ images, columnCount, onOpen, t }) {
   const columns = useMasonryColumns(images, columnCount)
   return (
     <div className="flex gap-5 items-start">
@@ -59,7 +87,7 @@ function MasonryGrid({ images, columnCount, onOpen }) {
                   className="w-full object-cover transition-transform duration-700 ease-silk group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-bg-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
-                  <span className="text-xs tracking-widest2 uppercase text-cream">{img.group}</span>
+                  <span className="text-xs tracking-widest2 uppercase text-cream">{translateEvent(img.group, t)}</span>
                 </div>
               </motion.button>
             ))}
@@ -70,7 +98,13 @@ function MasonryGrid({ images, columnCount, onOpen }) {
   )
 }
 
-export default function Gallery() {
+
+ export default function Gallery() {
+  const { language } = useLanguage()
+
+  const translations = { pt, en, fr, de }
+  const t = translations[language]
+
   const [active, setActive] = useState('All')
   const [activeGroup, setActiveGroup] = useState(null)
   const [lightboxIndex, setLightboxIndex] = useState(null)
@@ -107,31 +141,40 @@ const hasGroups = availableGroups.length > 0
     <div className="pt-32 pb-24 px-6">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-12">
-          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">Portfolio</p>
-          <h1 className="font-display text-4xl md:text-5xl text-cream">Gallery</h1>
+          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">{t.gallery.label}</p>
+          <h1 className="font-display text-4xl md:text-5xl text-cream">{t.gallery.title}</h1>
         </Reveal>
     </div>
         <LayoutGroup>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => selectCategory(cat)}
-                data-cursor-hover
-                className={`relative rounded-full px-5 py-2 text-sm transition-colors duration-300 ${
-                  active === cat ? 'text-bg-primary' : 'text-cream/60 hover:text-cream'
-                }`}
-              >
-                {active === cat && (
-                  <motion.span
-                    layoutId="pill"
-                    className="absolute inset-0 rounded-full bg-pink"
-                    transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
-                  />
-                )}
-                <span className="relative z-10">{cat}</span>
-              </button>
-            ))}
+  <button
+    key={cat}
+    onClick={() => selectCategory(cat)}
+    data-cursor-hover
+    className={`relative rounded-full px-5 py-2 text-sm transition-colors duration-300 ${
+      active === cat ? 'text-bg-primary' : 'text-cream/60 hover:text-cream'
+    }`}
+  >
+    {active === cat && (
+      <motion.span
+        layoutId="pill"
+        className="absolute inset-0 rounded-full bg-pink"
+        transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+      />
+    )}
+
+    <span className="relative z-10">
+      <span className="relative z-10">
+      {cat === 'All'
+        ? t.gallery.all
+        : cat === 'WRC'
+        ? 'WRC'
+        : t.gallery.nationalRally}
+</span>
+    </span>
+  </button>
+))}
           </div>
         </LayoutGroup>
 
@@ -155,7 +198,7 @@ const hasGroups = availableGroups.length > 0
 )}
 
       {!hasGroups || activeGroup ? (
-  <MasonryGrid images={visibleImages} columnCount={columnCount} onOpen={openAt} />
+  <MasonryGrid images={visibleImages} columnCount={columnCount} onOpen={openAt}  t={t}/>
 ) : (
   <p className="text-center text-cream/40 text-sm">
     Choose a rally to view the photos.

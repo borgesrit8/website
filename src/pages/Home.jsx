@@ -5,16 +5,24 @@ import { FiCamera, FiHeart, FiWind, FiFlag, FiChevronDown } from 'react-icons/fi
 import Reveal from '../components/Reveal'
 import FeaturedCarousel from '../components/FeaturedCarousel'
 import { fadeUp, viewportOnce } from '../hooks/useScrollReveal'
-
+import { useLanguage } from '../hooks/LanguageContext'
+import pt from '../i18n/pt'
+import en from '../i18n/en'
+import fr from '../i18n/fr'
+import de from '../i18n/de'
 
 const cards = [
-  { icon: FiCamera, title: 'Photography', text: 'Every frame composed with intention, not just captured.' },
-  { icon: FiHeart, title: 'Emotion', text: 'The adrenaline of the stage, translated into images you feel, not just see.s' },
-  { icon: FiWind, title: 'Adventure', text: 'From dirt roads to misty mountains — always where the story unfolds.' },
-  { icon: FiFlag, title: 'Motorsport', text: 'Years spent alongside teams and drivers, with real respect for real speed.' },
+  { icon: FiCamera, key: 'photography' },
+  { icon: FiHeart, key: 'emotion' },
+  { icon: FiWind, key: 'adventure' },
+  { icon: FiFlag, key: 'motorsport' },
 ]
 
 export default function Home() {
+    const { language } = useLanguage()
+
+  const translations = { pt, en, fr, de }
+  const t = translations[language]
   const heroRef = useRef(null)
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] })
   const y = useTransform(scrollYProgress, [0, 1], ['0%', '35%'])
@@ -48,7 +56,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.3 }}
             className="font-script text-3xl md:text-4xl text-pink mb-4"
           >
-            Rally & Automotive Photographer
+            {t.home.heroSubtitle}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
@@ -56,9 +64,9 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.5 }}
             className="font-display text-5xl sm:text-6xl md:text-8xl leading-[1.05] text-cream"
           >
-            Capturing Speed,
+            {t.home.heroTitle}
             <br />
-            <span className="text-gradient-gold">Creating Memories.</span>
+            <span className="text-gradient-gold">{t.home.heroTitleAccent}</span>
           </motion.h1>
 
           <motion.div
@@ -72,14 +80,14 @@ export default function Home() {
               data-cursor-hover
               className="rounded-full bg-pink px-8 py-3.5 text-sm tracking-wide text-bg-primary transition-transform duration-300 hover:scale-105"
             >
-              View Gallery
+              {t.home.viewGallery}
             </Link>
             <Link
               to="/about"
               data-cursor-hover
               className="rounded-full border border-cream/30 px-8 py-3.5 text-sm tracking-wide text-cream transition-all duration-300 hover:border-gold hover:text-gold hover:scale-105"
             >
-              About Me
+              {t.home.aboutMe}
             </Link>
           </motion.div>
         </motion.div>
@@ -97,8 +105,8 @@ export default function Home() {
       <section className="relative bg-bg-primary px-6 py-28 md:py-36">
         <div className="max-w-6xl mx-auto">
           <Reveal className="text-center mb-16">
-            <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">What guides my work</p>
-            <h2 className="font-display text-4xl md:text-5xl text-cream">More Than Images</h2>
+            <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">{t.home.guidesTitle}</p>
+            <h2 className="font-display text-4xl md:text-5xl text-cream">{t.home.moreThanImages}</h2>
           </Reveal> 
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -113,8 +121,13 @@ export default function Home() {
                 className="group rounded-3xl bg-card border border-white/5 p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-glow hover:border-pink/30"
               >
                 <c.icon className="text-gold mb-5" size={26} />
-                <h3 className="font-display text-2xl text-cream mb-2">{c.title}</h3>
-                <p className="text-sm text-cream/55 leading-relaxed">{c.text}</p>
+                <h3 className="font-display text-2xl text-cream mb-2">
+                {t.home.cards[c.key].title}
+                </h3>
+
+                <p className="text-sm text-cream/55 leading-relaxed">
+                {t.home.cards[c.key].text}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -125,8 +138,8 @@ export default function Home() {
       <section className="relative bg-bg-secondary py-28 md:py-36">
         <div className="max-w-6xl mx-auto px-6 mb-14 text-center">
           <Reveal>
-            <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">Selection</p>
-            <h2 className="font-display text-4xl md:text-5xl text-cream">Featured Photos</h2>
+            <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">{t.home.selection}</p>
+            <h2 className="font-display text-4xl md:text-5xl text-cream">{t.home.featuredPhotos}</h2>
           </Reveal>
         </div>
         <FeaturedCarousel />

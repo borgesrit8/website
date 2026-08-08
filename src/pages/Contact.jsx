@@ -1,8 +1,17 @@
 import { useState } from 'react'
 import { FiInstagram, FiLinkedin, FiMail, FiMapPin } from 'react-icons/fi'
 import Reveal from '../components/Reveal'
+import { useLanguage } from '../hooks/LanguageContext'
+import pt from '../i18n/pt'
+import en from '../i18n/en'
+import fr from '../i18n/fr'
+import de from '../i18n/de'
 
 export default function Contact() {
+  const { language } = useLanguage()
+  const translations = { pt, en, fr, de }
+  const t = translations[language]
+
   const [sent, setSent] = useState(false)
   const [form, setForm] = useState({ name: '', email: '', message: '' })
 
@@ -13,14 +22,14 @@ export default function Contact() {
     <div className="pt-32 pb-24 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
         <Reveal>
-          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">Contact</p>
+          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">{t.contact.label}</p>
           <h1 className="font-display text-4xl md:text-5xl text-cream mb-6 leading-tight">
-            Let's create
+            {t.contact.title}
             <br />
-            something memorable.
+            {t.contact.titleAccent}
           </h1>
           <p className="text-cream/60 leading-relaxed mb-10 max-w-md">
-            Available for rally coverage, motorsport events, editorial work, and collaborations with teams and brands.
+         
           </p>
 
           <div className="flex flex-col gap-4 mb-10">
@@ -34,7 +43,7 @@ export default function Contact() {
               <FiLinkedin /> Rita Borges
             </a>
             <p className="flex items-center gap-3 text-cream/70">
-              <FiMapPin /> Based in Portugal 
+              <FiMapPin /> {t.contact.location} 
             </p>
           </div>
 
@@ -49,14 +58,14 @@ export default function Contact() {
         >
             {sent ? (
               <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
-                <p className="font-display text-3xl text-pink mb-3">Thank you!</p>
-                <p className="text-cream/60">Your message has been sent. I’ll reply soon.</p>
+                <p className="font-display text-3xl text-pink mb-3">{t.contact.thankYou}</p>
+                <p className="text-cream/60">{t.contact.sentMessage}</p>
               </div>
             ) : (
               <>
                 <div className="mb-6">
                   <label htmlFor="name" className="block text-xs tracking-widest2 uppercase text-cream/50 mb-2">
-                    Name
+                    {t.contact.name}
                   </label>
                   <input
                     id="name"
@@ -65,12 +74,12 @@ export default function Contact() {
                     value={form.name}
                     onChange={handleChange}
                     className="w-full rounded-xl bg-bg-secondary border border-white/10 px-4 py-3 text-cream placeholder:text-cream/30 focus:border-pink outline-none transition-colors"
-                    placeholder="Your name"
+                    placeholder={t.contact.namePlaceholder}
                   />
                 </div>
                 <div className="mb-6">
                   <label htmlFor="email" className="block text-xs tracking-widest2 uppercase text-cream/50 mb-2">
-                    Email
+                    {t.contact.emailLabel}
                   </label>
                   <input
                     id="email"
@@ -80,12 +89,12 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange}
                     className="w-full rounded-xl bg-bg-secondary border border-white/10 px-4 py-3 text-cream placeholder:text-cream/30 focus:border-pink outline-none transition-colors"
-                    placeholder="your@email"
+                    placeholder={t.contact.emailPlaceholder}
                   />
                 </div>
                 <div className="mb-8">
                   <label htmlFor="message" className="block text-xs tracking-widest2 uppercase text-cream/50 mb-2">
-                    Message
+                    {t.contact.message}
                   </label>
                   <textarea
                     id="message"
@@ -95,7 +104,7 @@ export default function Contact() {
                     value={form.message}
                     onChange={handleChange}
                     className="w-full rounded-xl bg-bg-secondary border border-white/10 px-4 py-3 text-cream placeholder:text-cream/30 focus:border-pink outline-none transition-colors resize-none"
-                    placeholder="Tell me about your event or project..."
+                    placeholder={t.contact.messagePlaceholder}
                   />
                 </div>
                 <button
@@ -103,7 +112,7 @@ export default function Contact() {
                   data-cursor-hover
                   className="w-full rounded-full bg-pink py-3.5 text-sm tracking-wide text-bg-primary transition-transform duration-300 hover:scale-[1.02]"
                 >
-                  Send message
+                  {t.contact.send}
                 </button>
               </>
             )}

@@ -1,23 +1,32 @@
 import Reveal from '../components/Reveal'
 import StatCounter from '../components/StatCounter'
+import { useLanguage } from '../hooks/LanguageContext'
+import pt from '../i18n/pt'
+import en from '../i18n/en'
+import fr from '../i18n/fr'
+import de from '../i18n/de'
 
 export default function About() {
+  const { language } = useLanguage()
+  const translations = { pt, en, fr, de }
+  const t = translations[language]
+
   return (
     <div className="pt-32 pb-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <Reveal>
-          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">About me</p>
+          <p className="text-[11px] tracking-widest2 uppercase text-gold mb-3">{t.about.label}</p>
           <h1 className="font-display text-4xl md:text-5xl text-cream mb-6 leading-tight">
-          Where Speed Meets Emotion
+          {t.about.title}
           </h1>
         </Reveal>
 
         <Reveal delay={0.15}>
           <p className="text-cream/60 leading-relaxed mb-4">
-            I'm a rally photographer and a Computer Engineering student, always chasing the split second where speed, light and emotion become one frame.
+            {t.about.paragraph1}
           </p>
           <p className="text-cream/60 leading-relaxed mb-10">
-            Every stage is different. Dust, rain, mist or sunlight—I'm drawn to the moments where precision meets unpredictability, capturing the raw emotion that makes rally unforgettable.
+            {t.about.paragraph2}
           </p>
         </Reveal>
 
@@ -26,9 +35,9 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.4} className="grid grid-cols-2 sm:grid-cols-3 gap-8">
-          <StatCounter value={13} label="Events Covered" />
-          <StatCounter value={3} suffix="k+" label="Photos Taken" />
-          <StatCounter value={3} label="Years of Experience" />
+          <StatCounter value={13} label={t.about.eventsCovered} />
+          <StatCounter value={3} suffix="k+" label={t.about.photosTaken} />
+          <StatCounter value={3} label={t.about.yearsExperience} />
 
         </Reveal>
       </div>
