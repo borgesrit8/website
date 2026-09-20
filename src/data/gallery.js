@@ -101,11 +101,26 @@ import IImrt18 from '../assets/hero/IImrt18.JPG'
 import IImrt19 from '../assets/hero/IImrt19.JPG'
 import IImrt20 from '../assets/hero/IImrt20.JPG'
 
+import rllb1 from '../assets/hero/rllb1.PNG'
+import rllb2 from '../assets/hero/rllb2.JPG'
+import rllb3 from '../assets/hero/rllb3.JPG'
+import rllb4 from '../assets/hero/rllb4.JPG'
+import rllb5 from '../assets/hero/rllb5.PNG'
+import rllb6 from '../assets/hero/rllb6.JPG'
+import rllb7 from '../assets/hero/rllb7.JPG'
+import rllb8 from '../assets/hero/rllb8.JPG'
+import rllb9 from '../assets/hero/rllb9.JPG'
+import rllb10 from '../assets/hero/rllb10.JPG'
+import rllb11 from '../assets/hero/rllb11.JPG'
+import rllb12 from '../assets/hero/rllb12.JPG'
+import rllb13 from '../assets/hero/rllb13.JPG'
+import rllb14 from '../assets/hero/rllb14.JPG'
+
 
 export const categories = ['WRC', 'National Rally']
 
 export const galleryImages = [
-//WRC
+//WRC 26
   { id: 1, category: 'WRC', group: 'Rally de Portugal 2026', w: 1600, h: 1067, src: wrc1, alt: 'Carro WRC — foto 1' },
   { id: 2, category: 'WRC', group: 'Rally de Portugal 2026', w: 1600, h: 1067, src: wrc2, alt: 'Carro WRC — foto 2' },
   { id: 3, category: 'WRC', group: 'Rally de Portugal 2026', w: 1600, h: 1067, src: wrc3, alt: 'Carro WRC — foto 3' },
@@ -127,7 +142,7 @@ export const galleryImages = [
   { id: 19, category: 'WRC', group: 'Rally de Portugal 2026', w: 1600, h: 1067, src: wrc19, alt: 'Carro WRC — foto 19' },
   { id: 20, category: 'WRC', group: 'Rally de Portugal 2026', w: 1600, h: 1067, src: wrc20, alt: 'Carro WRC — foto 20' },
 
-
+//Rali Queima das fitas 26
   { id: 17, category: 'National Rally', group: 'Rali Queima das Fitas 2026', w: 1600, h: 1067, src: rqf1, alt: 'Carro — foto 1' },
   { id: 18, category: 'National Rally', group: 'Rali Queima das Fitas 2026', w: 1600, h: 1067, src: rqf2, alt: 'Carro — foto 2' },
   { id: 19, category: 'National Rally', group: 'Rali Queima das Fitas 2026', w: 1600, h: 1067, src: rqf3, alt: 'Carro — foto 3' },
@@ -149,7 +164,7 @@ export const galleryImages = [
   { id: 33, category: 'National Rally', group: 'Rali Queima das Fitas 2026', w: 1600, h: 1067, src: rqf19, alt: 'Carro — foto 19' },
   { id: 33, category: 'National Rally', group: 'Rali Queima das Fitas 2026', w: 1600, h: 1067, src: rqf20, alt: 'Carro — foto 20' },
 
-
+// Rali Espumante do Dão 26
   { id: 34, category: 'National Rally', group: 'Rali Espumante do Dão 2026', w: 1600, h: 1067, src: red1, alt: 'Carro — foto 1' },
   { id: 35, category: 'National Rally', group: 'Rali Espumante do Dão 2026', w: 1600, h: 1067, src: red2, alt: 'Carro — foto 2' },
   { id: 36, category: 'National Rally', group: 'Rali Espumante do Dão 2026', w: 1600, h: 1067, src: red3, alt: 'Carro — foto 3' },
@@ -162,7 +177,7 @@ export const galleryImages = [
   { id: 43, category: 'National Rally', group: 'Rali Espumante do Dão 2026', w: 1600, h: 1067, src: red10, alt: 'Carro — foto 10' },
   { id: 44, category: 'National Rally', group: 'Rali Espumante do Dão 2026', w: 1600, h: 1067, src: red11, alt: 'Carro — foto 11' },
 
-
+// Legends 25
   { id: 45, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2025', w: 1600, h: 1067, src: ld1, alt: 'Carro — foto 1' },
   { id: 46, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2025', w: 1600, h: 1067, src: ld2, alt: 'Carro — foto 2' },
   { id: 47, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2025', w: 1600, h: 1067, src: ld3, alt: 'Carro — foto 3' },
@@ -185,7 +200,7 @@ export const galleryImages = [
   { id: 64, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2025', w: 1600, h: 1067, src: ld20, alt: 'Carro — foto 20' },
  
 
-
+// Motorshow 25
   { id: 64, category: 'National Rally', group: 'II Mortágua Motorshow', w: 1600, h: 1067, src: IImrt1, alt: 'Carro — foto 1' },
   { id: 64, category: 'National Rally', group: 'II Mortágua Motorshow', w: 1600, h: 1067, src: IImrt2, alt: 'Carro — foto 2' },
   { id: 64, category: 'National Rally', group: 'II Mortágua Motorshow', w: 1600, h: 1067, src: IImrt3, alt: 'Carro — foto 3' },
@@ -208,5 +223,20 @@ export const galleryImages = [
   { id: 64, category: 'National Rally', group: 'II Mortágua Motorshow', w: 1600, h: 1067, src: IImrt20, alt: 'Carro — foto 20' },
 
 
+// Legends 26
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb1, alt: 'Carro — foto 1' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb2, alt: 'Carro — foto 2' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb3, alt: 'Carro — foto 3' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb4, alt: 'Carro — foto 4' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb5, alt: 'Carro — foto 5' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb6, alt: 'Carro — foto 6' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb7, alt: 'Carro — foto 7' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb8, alt: 'Carro — foto 8' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb9, alt: 'Carro — foto 9' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb10, alt: 'Carro — foto 10' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb11, alt: 'Carro — foto 11' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb12, alt: 'Carro — foto 12' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb13, alt: 'Carro — foto 13' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb14, alt: 'Carro — foto 14' },
 
 ]
