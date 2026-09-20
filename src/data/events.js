@@ -1,13 +1,13 @@
-import redCover from '../assets/hero/ered.jpg'
 import rqfCover from '../assets/hero/erqf.jpg'
 import wrcCover from '../assets/hero/ewrc.jpg'
+import redCover from '../assets/hero/ered.jpg'
 import rllbCover from '../assets/hero/rllbCover.JPG'
 
 export const events = [
 
   {
     id: 1,
-    name: 'Rali Queima das Fitas',
+    name: 'Rali Queima das Fitas 2026',
     location: 'Coimbra, Portugal',
     date: 'May 2026',
     cover: rqfCover,
@@ -16,7 +16,7 @@ export const events = [
   
   {
     id: 2,
-    name: 'Rally de Portugal - WRC',
+    name: 'Rally de Portugal - WRC 2026',
     location: 'Portugal',
     date: 'May 2026',
     cover: wrcCover,
@@ -25,7 +25,7 @@ export const events = [
   
   {
     id: 3,
-    name: 'Rali Espumante do Dão',
+    name: 'Rali Espumante do Dão 2026',
     location: 'Carregal do Sal, Portugal',
     date: 'May 2026',
     cover: redCover,
