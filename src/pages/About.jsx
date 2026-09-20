@@ -35,8 +35,8 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.4} className="grid grid-cols-2 sm:grid-cols-3 gap-8">
-          <StatCounter value={13} label={t.about.eventsCovered} />
-          <StatCounter value={3} suffix="k+" label={t.about.photosTaken} />
+          <StatCounter value={14} label={t.about.eventsCovered} />
+          <StatCounter value={6} suffix="k+" label={t.about.photosTaken} />
           <StatCounter value={3} label={t.about.yearsExperience} />
 
         </Reveal>
