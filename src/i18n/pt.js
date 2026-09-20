@@ -81,8 +81,16 @@ const pt = {
     label: 'Percurso',
     title: 'Eventos',
     viewGallery: 'Ver galeria',
-
+    
     1: {
+      name: 'Rally Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'Setembro de 2026',
+      description:
+        'Uma celebração dos lendários carros de rali pelas icónicas estradas do Luso-Bussaco, encurtada para apenas um dia devido ao risco de incêndio.',
+    },
+
+    2: {
       name: 'Rali Espumante do Dão',
       location: 'Carregal do Sal, Portugal',
       date: 'Maio de 2026',
@@ -90,14 +98,7 @@ const pt = {
         'Um desafiante rali de asfalto pelo coração da região do Dão, combinando troços técnicos, secções rápidas e fãs locais apaixonados.',
     },
 
-    2: {
-      name: 'Rali Queima das Fitas', 
-      location: 'Coimbra, Portugal',
-      date: 'Maio de 2026',
-      description:
-        'Um histórico rali de regularidade pelas ruas de Coimbra, celebrando os automóveis clássicos, a condução de precisão e a rica tradição do automobilismo português.',
-    },
-
+    
     3: {
       name: 'Rali de Portugal - WRC',
       location: 'Portugal',
@@ -106,12 +107,12 @@ const pt = {
         'Um dos mais icónicos ralis de terra do mundo, onde a velocidade, a precisão e as paisagens deslumbrantes definem cada troço.',
     },
 
-    4: {
-      name: 'Rally Legends Luso-Bussaco 2026',
-      location: 'Portugal',
-      date: 'Setembro de 2026',
+    4: { 
+      name: 'Rali Queima das Fitas', 
+      location: 'Coimbra, Portugal',
+      date: 'Maio de 2026',
       description:
-        'Uma celebração dos lendários carros de rali pelas icónicas estradas do Luso-Bussaco, encurtada para apenas um dia devido ao risco de incêndio.',
+        'Um histórico rali de regularidade pelas ruas de Coimbra, celebrando os automóveis clássicos, a condução de precisão e a rica tradição do automobilismo português.',
     },
   },
 

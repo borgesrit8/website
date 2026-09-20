@@ -81,6 +81,14 @@ const fr = {
     viewGallery: 'Voir la Galerie',
 
     1: {
+      name: 'Rallye Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'Septembre 2026',
+      description:
+        'Une célébration des légendaires voitures de rallye à travers les routes emblématiques de Luso-Bussaco, écourtée à une seule journée en raison du risque d’incendie.',
+    },
+
+    2: {
       name: 'Rallye du Vin Mousseux du Dão',
       location: 'Carregal do Sal, Portugal',
       date: 'Mai 2026',
@@ -88,13 +96,6 @@ const fr = {
         'Un rallye sur asphalte exigeant au cœur de la région du Dão, combinant des spéciales techniques, des sections rapides et des passionnés locaux.',
     },
 
-    2: {
-      name: 'Rallye Queima das Fitas',
-      location: 'Coimbra, Portugal',
-      date: 'Mai 2026',
-      description:
-        'Un rallye historique de régularité dans les rues de Coimbra, célébrant les voitures classiques, la précision de conduite et le riche patrimoine du sport automobile portugais.',
-    },
 
     3: {
       name: 'Rallye du Portugal - WRC',
@@ -104,14 +105,14 @@ const fr = {
         'L’un des rallyes sur terre les plus emblématiques au monde, où la vitesse, la précision et des paysages à couper le souffle définissent chaque spéciale.',
     },
 
-
     4: {
-      name: 'Rallye Legends Luso-Bussaco 2026',
-      location: 'Portugal',
-      date: 'Septembre 2026',
+      name: 'Rallye Queima das Fitas',
+      location: 'Coimbra, Portugal',
+      date: 'Mai 2026',
       description:
-        'Une célébration des légendaires voitures de rallye à travers les routes emblématiques de Luso-Bussaco, écourtée à une seule journée en raison du risque d’incendie.',
+        'Un rallye historique de régularité dans les rues de Coimbra, célébrant les voitures classiques, la précision de conduite et le riche patrimoine du sport automobile portugais.',
     },
+    
   },
 
   contact: {

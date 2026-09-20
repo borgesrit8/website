@@ -81,19 +81,19 @@ const en = {
     viewGallery: 'View Gallery',
 
     1: {
+      name: 'Rally Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'September 2026',
+      description:
+        'A celebration of legendary rally cars through the iconic roads of Luso-Bussaco, shortened to one day due to wildfire risk.',
+    },
+
+    2: {
       name: 'Dão Sparkling Wine Rally',
       location: 'Carregal do Sal, Portugal',
       date: 'May 2026',
       description:
         'A challenging tarmac rally through the heart of the Dão region, combining technical stages, fast sections and passionate local fans.',
-    },
-
-    2: {
-      name: 'Queima das Fitas Rally',
-      location: 'Coimbra, Portugal',
-      date: 'May 2026',
-      description:
-        "A historic regularity rally through the streets of Coimbra, celebrating classic cars, precision driving and Portugal's rich motorsport heritage.",
     },
 
     3: {
@@ -105,12 +105,13 @@ const en = {
     },
 
     4: {
-      name: 'Rally Legends Luso-Bussaco 2026',
-      location: 'Portugal',
-      date: 'September 2026',
+      name: 'Queima das Fitas Rally',
+      location: 'Coimbra, Portugal',
+      date: 'May 2026',
       description:
-        'A celebration of legendary rally cars through the iconic roads of Luso-Bussaco, shortened to one day due to wildfire risk.',
+        "A historic regularity rally through the streets of Coimbra, celebrating classic cars, precision driving and Portugal's rich motorsport heritage.",
     },
+    
   },
 
     contact: {

@@ -81,19 +81,19 @@ const de = {
     viewGallery: 'Galerie ansehen',
 
     1: {
+      name: 'Rally Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'September 2026',
+      description:
+        'Eine Feier legendärer Rallyeautos auf den ikonischen Straßen von Luso-Bussaco, die aufgrund der Brandgefahr auf nur einen Tag verkürzt wurde.',
+    },
+
+    2: {
       name: 'Dão-Schaumwein-Rallye',
       location: 'Carregal do Sal, Portugal',
       date: 'Mai 2026',
       description:
         'Eine anspruchsvolle Asphalt-Rallye im Herzen der Dão-Region mit technisch anspruchsvollen Wertungsprüfungen, schnellen Abschnitten und begeisterten lokalen Fans.',
-    },
-
-    2: {
-      name: 'Queima das Fitas Rallye',
-      location: 'Coimbra, Portugal',
-      date: 'Mai 2026',
-      description:
-        'Eine historische Gleichmäßigkeitsrallye durch die Straßen von Coimbra, bei der klassische Fahrzeuge, präzises Fahren und das reiche Motorsport-Erbe Portugals gefeiert werden.',
     },
 
     3: {
@@ -105,11 +105,11 @@ const de = {
     },
 
     4: {
-      name: 'Rally Legends Luso-Bussaco 2026',
-      location: 'Portugal',
-      date: 'September 2026',
+      name: 'Queima das Fitas Rallye',
+      location: 'Coimbra, Portugal',
+      date: 'Mai 2026',
       description:
-        'Eine Feier legendärer Rallyeautos auf den ikonischen Straßen von Luso-Bussaco, die aufgrund der Brandgefahr auf nur einen Tag verkürzt wurde.',
+        'Eine historische Gleichmäßigkeitsrallye durch die Straßen von Coimbra, bei der klassische Fahrzeuge, präzises Fahren und das reiche Motorsport-Erbe Portugals gefeiert werden.',
     },
   },
 
