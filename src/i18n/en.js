@@ -97,11 +97,19 @@ const en = {
     },
 
     3: {
-      name: 'Rally de Portugal - WRC',
+      name: 'Rally of Portugal - WRC',
       location: 'Portugal',
       date: 'May 2026',
       description:
         'One of the most iconic gravel rallies in the world, where speed, precision and breathtaking landscapes define every stage.',
+    },
+
+    4: {
+      name: 'Rally Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'September 2026',
+      description:
+        'A celebration of legendary rally cars through the iconic roads of Luso-Bussaco, shortened to one day due to wildfire risk.',
     },
   },
 

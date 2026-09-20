@@ -73,6 +73,7 @@ const pt = {
       rallyPortugal2026: 'Rali de Portugal 2026',
       raliQueimaFitas2026: 'Rali Queima das Fitas 2026',
       rallyLegends2025: 'Rally Legends Luso-Bussaco 2025',
+      rallyLegends2026: 'Rally Legends Luso-Bussaco 2026',
     },
   },
 
@@ -90,7 +91,7 @@ const pt = {
     },
 
     2: {
-      name: 'Rali Queima das Fitas',
+      name: 'Rali Queima das Fitas', 
       location: 'Coimbra, Portugal',
       date: 'Maio de 2026',
       description:
@@ -103,6 +104,14 @@ const pt = {
       date: 'Maio de 2026',
       description:
         'Um dos mais icónicos ralis de terra do mundo, onde a velocidade, a precisão e as paisagens deslumbrantes definem cada troço.',
+    },
+
+    4: {
+      name: 'Rally Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'Setembro de 2026',
+      description:
+        'Uma celebração dos lendários carros de rali pelas icónicas estradas do Luso-Bussaco, encurtada para apenas um dia devido ao risco de incêndio.',
     },
   },
 

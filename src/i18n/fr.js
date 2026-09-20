@@ -103,6 +103,15 @@ const fr = {
       description:
         'L’un des rallyes sur terre les plus emblématiques au monde, où la vitesse, la précision et des paysages à couper le souffle définissent chaque spéciale.',
     },
+
+
+    4: {
+      name: 'Rallye Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'Septembre 2026',
+      description:
+        'Une célébration des légendaires voitures de rallye à travers les routes emblématiques de Luso-Bussaco, écourtée à une seule journée en raison du risque d’incendie.',
+    },
   },
 
   contact: {

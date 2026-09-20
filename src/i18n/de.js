@@ -103,6 +103,14 @@ const de = {
       description:
         'Eine der bekanntesten Schotterrallyes der Welt, bei der Geschwindigkeit, Präzision und atemberaubende Landschaften jede Wertungsprüfung bestimmen.',
     },
+
+    4: {
+      name: 'Rally Legends Luso-Bussaco 2026',
+      location: 'Portugal',
+      date: 'September 2026',
+      description:
+        'Eine Feier legendärer Rallyeautos auf den ikonischen Straßen von Luso-Bussaco, die aufgrund der Brandgefahr auf nur einen Tag verkürzt wurde.',
+    },
   },
 
   contact: {

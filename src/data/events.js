@@ -1,6 +1,7 @@
 import redCover from '../assets/hero/ered.jpg'
 import rqfCover from '../assets/hero/erqf.jpg'
 import wrcCover from '../assets/hero/ewrc.jpg'
+import rllbCover from '../assets/hero/rllbCover.JPG'
 
 export const events = [
 
@@ -27,5 +28,13 @@ export const events = [
     date: 'May 2026',
     cover: wrcCover,
     description: 'One of the most iconic gravel rallies in the world, where speed, precision and breathtaking landscapes define every stage.',
+  },
+  {
+    id: 4,
+    name: 'Rally Legends Luso-Bussaco 2026',
+    location: 'Portugal',
+    date: 'September 2026',
+    cover: rllbCover,
+    description: 'A celebration of legendary rally cars through the iconic roads of Luso-Bussaco, shortened to one day due to wildfire risk.',
   },
 ]
