@@ -39,7 +39,7 @@ export default function About() {
           <StatCounter value={6} suffix="k+" label={t.about.photosTaken} />
           <StatCounter value={3} label={t.about.yearsExperience} />
 
-        </Reveal>
+        </Reveal> 
       </div>
     </div>
   )

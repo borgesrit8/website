@@ -1,4 +1,4 @@
-import rllbCover from '../assets/hero/rllbCover.JPG'
+import rllbCover from '../assets/hero/rllbCover.jpg'
 import redCover from '../assets/hero/redCover.jpg'
 import wrcCover from '../assets/hero/wrcCover.jpg'
 import rqfCover from '../assets/hero/rqfCover.jpg' 
