@@ -1,7 +1,7 @@
-import redCover from '../assets/hero/ered.jpg'
-import rqfCover from '../assets/hero/erqf.jpg'
-import wrcCover from '../assets/hero/ewrc.jpg'
 import rllbCover from '../assets/hero/rllbCover.JPG'
+import redCover from '../assets/hero/ered.jpg'
+import wrcCover from '../assets/hero/ewrc.jpg'
+import rqfCover from '../assets/hero/erqf.jpg'
 
 export const events = [
 
