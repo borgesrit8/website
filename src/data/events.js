@@ -37,4 +37,4 @@ export const events = [
     cover: rllbCover,
     description: 'A celebration of legendary rally cars through the iconic roads of Luso-Bussaco, shortened to one day due to wildfire risk.',
   },
-]
+] 

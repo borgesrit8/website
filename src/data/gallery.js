@@ -224,19 +224,19 @@ export const galleryImages = [
 
 
 // Legends 26
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb1, alt: 'Carro — foto 1' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb2, alt: 'Carro — foto 2' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb3, alt: 'Carro — foto 3' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb4, alt: 'Carro — foto 4' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb5, alt: 'Carro — foto 5' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb6, alt: 'Carro — foto 6' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb7, alt: 'Carro — foto 7' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb8, alt: 'Carro — foto 8' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb9, alt: 'Carro — foto 9' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb10, alt: 'Carro — foto 10' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb11, alt: 'Carro — foto 11' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb12, alt: 'Carro — foto 12' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb13, alt: 'Carro — foto 13' },
-   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco', w: 1600, h: 1067, src: rllb14, alt: 'Carro — foto 14' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb1, alt: 'Carro — foto 1' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb2, alt: 'Carro — foto 2' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb3, alt: 'Carro — foto 3' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb4, alt: 'Carro — foto 4' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb5, alt: 'Carro — foto 5' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb6, alt: 'Carro — foto 6' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb7, alt: 'Carro — foto 7' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb8, alt: 'Carro — foto 8' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb9, alt: 'Carro — foto 9' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb10, alt: 'Carro — foto 10' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb11, alt: 'Carro — foto 11' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb12, alt: 'Carro — foto 12' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb13, alt: 'Carro — foto 13' },
+   { id: 65, category: 'National Rally', group: 'Rally Legends Luso-Bussaco 2026', w: 1600, h: 1067, src: rllb14, alt: 'Carro — foto 14' },
 
 ]
